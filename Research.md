@@ -1,17 +1,13 @@
-## Papres
+## Reviews
 
 - Understanding Mashup Development
-
 - The essence of functional programming
 - Monads for functional programming
-
 - Functional Reactive Programming from First Principles
 - Push-Pull Functional Reactive Programming
 - Functional Reactive Animation
 - Arrows, Robots, and Functional Reactive Programming
-
 - Elm: Concurrent FRP for Functional GUIs
-
 - Linear Temporal Logic
 
 ## Study on NODE-RED
@@ -23,7 +19,9 @@
 
 ## Goal
 
-Design a mashup editor that employs FRP which will create a more featureful experience in physical mashup development
+Design a *mashup editor* that employs FRP which will create a more featureful experience in physical mashup development.
+
+Discuss the requirements of a mashup runtime should meet to support such editor.
 
 ## Implications (My understanding so far)
 
@@ -37,5 +35,8 @@ Design a mashup editor that employs FRP which will create a more featureful expe
 
 ## Implementation
 
-- A Physical mashup editor
-- A demo backend (API/RUNTIME)
+ A mashup editor and a demo backend (API/RUNTIME). The mashup editor should fall into the category of visual programming and is built upon an abstraction of FRP + WOT.
+
+## Experienments
+
+ Prove the implications by constructing proper test scenarios
