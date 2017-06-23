@@ -1,14 +1,14 @@
 ## Reviews
 
-- Understanding Mashup Development: What is mashup developmentm, what are the previous work done in mashup development tools, mashup approach characteristics
-- The essence of functional programming: Use Monad to structure functional programs
-- Monads for functional programming: Use Monad to create a parser
-- Functional Reactive Animation: FRP for animation, Introduction of Behavior and Event
-- Functional Reactive Programming from First Principles: Represent continous behavior using stream
-- Push-Pull Functional Reactive Programming: Optimization on FRP evaluation model
-- Arrows, Robots, and Functional Reactive Programming: Introduction of Arrowized FRP and its semantics
-- Elm: Concurrent FRP for Functional GUIs: Review on FRP, Application of FRP in creating a Elm - a Language for web development
-- Linear Temporal Logic: Could be used to describe/verify the implementation
+- **Understanding Mashup Development**: What is mashup developmentm, what are the previous work done in mashup development tools, mashup approach characteristics
+- **The essence of functional programming**: Use Monad to structure functional programs
+- **Monads for functional programming**: Use Monad to create a parser
+- **Functional Reactive Animation**: FRP for animation, Introduction of Behavior and Event
+- **Functional Reactive Programming from First Principles**: Represent continous behavior using stream
+- **Push-Pull Functional Reactive Programming**: Optimization on FRP evaluation model
+- **Arrows, Robots, and Functional Reactive Programming**: Introduction of Arrowized FRP and its semantics
+- **Elm: Concurrent FRP for Functional GUIs**: Review on FRP, Application of FRP in creating a Elm - a Language for web development
+- **Linear Temporal Logic**: Could be used to describe/verify the implementation
 
 ## Study on NODE-RED
 
