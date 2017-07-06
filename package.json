@@ -1,0 +1,15 @@
+{
+  "name": "craftt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:junjchen/craftt.git",
+  "author": "junjchen <chuckjunjchen@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "string-to-function": "^1.0.2"
+  },
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2"
+  }
+}
