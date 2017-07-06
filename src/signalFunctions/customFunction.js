@@ -1,10 +1,13 @@
+import stringToFunction from 'string-to-function'
+
 function CustomFunction(f) {
+    const func = stringToFunction(f)
     return ({
         dt,
         val
     }) => ({
         dt,
-        val: f(val)
+        val: func(val)
     })
 }
 

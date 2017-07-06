@@ -5,7 +5,7 @@ function Integral() {
         val = 0
     }) => ({
         dt: 1,
-        val: m + val * dt
+        val: m = m + val * dt
     })
 }
 
