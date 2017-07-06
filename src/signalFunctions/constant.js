@@ -3,7 +3,7 @@ function Constant(val) {
         dt
     }) => ({
         dt,
-        val
+        val: val * dt
     })
 }
 

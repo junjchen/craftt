@@ -2,10 +2,10 @@ function Integral() {
     let m = 0
     return ({
         dt,
-        val = 0
+        val
     }) => ({
-        dt: 1,
-        val: m = m + val * dt
+        dt,
+        val: m = m + val
     })
 }
 

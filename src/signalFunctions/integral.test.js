@@ -14,7 +14,7 @@ describe('Test integral signal function', function () {
                 val
             } = integral({
                 dt: 0.1,
-                val: 10
+                val: 1
             })
             expect(val).to.equal(1 + i)
         })
