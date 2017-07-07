@@ -6,6 +6,7 @@
   "author": "junjchen <chuckjunjchen@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "decimal.js": "^7.2.3",
     "lodash": "^4.17.4",
     "string-to-function": "^1.0.2"
   },

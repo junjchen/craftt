@@ -1,4 +1,4 @@
-function All(sf1, sf2) {
+function All([sf1, sf2]) {
     return ({
         dt,
         val

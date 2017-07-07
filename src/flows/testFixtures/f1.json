@@ -1,0 +1,90 @@
+{
+    "data": {
+        "node": "comb",
+        "type": "then"
+    },
+    "left": {
+        "data": {
+            "node": "comb",
+            "type": "then"
+        },
+        "left": {
+            "data": {
+                "node": "comb",
+                "type": "then"
+            },
+            "left": {
+                "data": {
+                    "node": "comb",
+                    "type": "then"
+                },
+                "left": {
+                    "data": {
+                        "node": "sf",
+                        "type": "constant",
+                        "params": {
+                            "val": 12
+                        }
+                    }
+                },
+                "right": {
+                    "data": {
+                        "node": "sf",
+                        "type": "customFunction",
+                        "params": {
+                            "f": "function(x) {return x.plus(1);}"
+                        }
+                    }
+                }
+            },
+            "right": {
+                "data": {
+                    "node": "sf",
+                    "type": "customFunction",
+                    "params": {
+                        "f": "function(x) {return x.plus(2);}"
+                    }
+                }
+            }
+        },
+        "right": {
+            "data": {
+                "node": "sf",
+                "type": "integral"
+            }
+        }
+    },
+    "right": {
+        "data": {
+            "node": "comb",
+            "type": "and"
+        },
+        "left": {
+            "data": {
+                "node": "sf",
+                "type": "identity"
+            }
+        },
+        "right": {
+            "data": {
+                "node": "comb",
+                "type": "then"
+            },
+            "left": {
+                "data": {
+                    "node": "sf",
+                    "type": "integral"
+                }
+            },
+            "right": {
+                "data": {
+                    "node": "sf",
+                    "type": "customFunction",
+                    "params": {
+                        "f": "function(x) {return x.plus(10);}"
+                    }
+                }
+            }
+        }
+    }
+}

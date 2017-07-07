@@ -5,8 +5,9 @@ import {
 
 describe('Test string function parse', function () {
     it('Parses and invokes the correct function', function () {
-        const fstr = 'function(val) {return val + 20;}'
-        const f = CustomFunction(fstr)
+        const f = CustomFunction({
+            f: 'function(val) {return val + 20;}'
+        })
         const {
             dt,
             val

@@ -1,11 +1,13 @@
+import Decimal from 'decimal.js'
+
 function Integral() {
-    let m = 0
+    let m = Decimal(0)
     return ({
         dt,
         val
     }) => ({
         dt,
-        val: m = m + val
+        val: m = m.plus(val)
     })
 }
 

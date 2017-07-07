@@ -1,9 +1,15 @@
-function Constant(val) {
+import Decimal from 'decimal.js'
+
+function Constant({
+    val
+}) {
+    const dVal = Decimal(val)
+
     return ({
         dt
     }) => ({
         dt,
-        val: val * dt
+        val: dVal.times(dt)
     })
 }
 
