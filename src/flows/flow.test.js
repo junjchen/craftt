@@ -15,7 +15,7 @@ import Flow from './flow'
 
 let f1
 before('Read fixture file', function (done) {
-    readFile(join(__dirname, './testFixtures/f1.json'), (err, data) => {
+    readFile(join(__dirname, './fixture1.json'), (err, data) => {
         f1 = JSON.parse(data)
         done()
     })
