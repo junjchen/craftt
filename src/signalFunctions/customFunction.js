@@ -8,7 +8,7 @@ function CustomFunction({f}) {
         val
     }) => ({
         dt,
-        val: func(val)
+        val: func(val, Decimal)
     })
 }
 

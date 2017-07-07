@@ -10,7 +10,6 @@ import {
 import {
     map
 } from 'lodash'
-import Decimal from 'decimal.js'
 import Flow from './flow'
 
 let f1
@@ -42,23 +41,23 @@ describe('Test Flow tree reduction', function () {
         const out = map(sigIn, s => flow(s))
         expect(out).to.deep.equal([{
                 dt: 0.1,
-                val: [Decimal(4.2), Decimal(14.2)]
+                val: [4.2, 14.2]
             },
             {
                 dt: 0.1,
-                val: [Decimal(8.4), Decimal(22.6)]
+                val: [8.4, 22.6]
             },
             {
                 dt: 0.1,
-                val: [Decimal(12.6), Decimal(35.2)]
+                val: [12.6, 35.2]
             },
             {
                 dt: 0.1,
-                val: [Decimal(16.8), Decimal(52)]
+                val: [16.8, 52]
             },
             {
                 dt: 0.1,
-                val: [Decimal(21), Decimal(73)]
+                val: [21, 73]
             },
         ])
     })

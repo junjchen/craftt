@@ -32,7 +32,7 @@
                         "node": "sf",
                         "type": "customFunction",
                         "params": {
-                            "f": "function(x) {return x.plus(1);}"
+                            "f": "function(x, Decimal) {return Decimal(x).plus(1).toNumber();}"
                         }
                     }
                 }
@@ -42,7 +42,7 @@
                     "node": "sf",
                     "type": "customFunction",
                     "params": {
-                        "f": "function(x) {return x.plus(2);}"
+                        "f": "function(x, Decimal) {return Decimal(x).plus(2).toNumber();}"
                     }
                 }
             }
@@ -81,7 +81,7 @@
                     "node": "sf",
                     "type": "customFunction",
                     "params": {
-                        "f": "function(x) {return x.plus(10);}"
+                        "f": "function(x, Decimal) {return Decimal(x).plus(10).toNumber();}"
                     }
                 }
             }

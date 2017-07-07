@@ -5,7 +5,6 @@ import {
 import {
     times
 } from 'lodash'
-import Decimal from 'decimal.js'
 
 describe('Test integral signal function', function () {
     it('Remembers over course of the time', function () {
@@ -17,7 +16,7 @@ describe('Test integral signal function', function () {
                 dt: 0.1,
                 val: 1
             })
-            expect(val).to.deep.equal(Decimal(1 + i))
+            expect(val).to.deep.equal(1 + i)
         })
     })
 })

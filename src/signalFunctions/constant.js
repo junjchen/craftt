@@ -3,13 +3,11 @@ import Decimal from 'decimal.js'
 function Constant({
     val
 }) {
-    const dVal = Decimal(val)
-
     return ({
         dt
     }) => ({
         dt,
-        val: dVal.times(dt)
+        val: Decimal(val).times(dt).toNumber()
     })
 }
 
