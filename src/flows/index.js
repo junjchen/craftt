@@ -1,3 +1,9 @@
-import Flow from './flow'
+import {
+    Flow,
+    eventStreams
+} from './flow'
 
-export {Flow}
+export {
+    Flow,
+    eventStreams
+}

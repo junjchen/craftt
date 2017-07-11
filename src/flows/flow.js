@@ -1,22 +1,45 @@
-import getSFInstance from '../signalFunctions'
-import getCombInstance from '../combinators'
+import {
+    assign,
+    each
+} from 'lodash'
+import {
+    getSFInstance,
+    getCombInstance
+} from '../sfs'
+import {
+    getEventstreamInstance
+} from '../events'
+
+const eventStreams = {}
 
 function Flow({
-    data,
+    sfs,
+    evts
+}) {
+    each(evts, (v, k) => {
+        eventStreams[k] = getEventstreamInstance(v)
+    })
+    return reduceSfTree(sfs)
+}
+
+function reduceSfTree({
+    meta,
     left,
     right
 }) {
-    switch (data.node) {
+    switch (meta.node) {
         case 'comb':
-            return getCombInstance({
-                type: data.type,
-                sfs: [Flow(left), Flow(right)]
-            })
+            return getCombInstance(assign({
+                sfs: [reduceSfTree(left), reduceSfTree(right)],
+            }, meta), eventStreams)
         case 'sf':
-            return getSFInstance(data)
+            return getSFInstance(meta)
         default:
             throw new Error(`${data.node} not supported`)
     }
 }
 
-export default Flow
+export {
+    Flow,
+    eventStreams
+}

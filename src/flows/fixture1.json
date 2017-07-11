@@ -1,87 +1,96 @@
 {
-    "data": {
-        "node": "comb",
-        "type": "then"
-    },
-    "left": {
-        "data": {
+    "sfs": {
+        "meta": {
             "node": "comb",
             "type": "then"
         },
         "left": {
-            "data": {
+            "meta": {
                 "node": "comb",
                 "type": "then"
             },
             "left": {
-                "data": {
+                "meta": {
                     "node": "comb",
                     "type": "then"
                 },
                 "left": {
-                    "data": {
-                        "node": "sf",
-                        "type": "constant",
-                        "params": {
-                            "val": 12
+                    "meta": {
+                        "node": "comb",
+                        "type": "then"
+                    },
+                    "left": {
+                        "meta": {
+                            "id": "sf1",
+                            "node": "sf",
+                            "type": "constant",
+                            "params": {
+                                "val": 12
+                            }
+                        }
+                    },
+                    "right": {
+                        "meta": {
+                            "id": "sf2",
+                            "node": "sf",
+                            "type": "customFunction",
+                            "params": {
+                                "f": "function(x, Decimal) {return Decimal(x).plus(1).toNumber();}"
+                            }
                         }
                     }
                 },
                 "right": {
-                    "data": {
+                    "meta": {
+                        "id": "sf3",
                         "node": "sf",
                         "type": "customFunction",
                         "params": {
-                            "f": "function(x, Decimal) {return Decimal(x).plus(1).toNumber();}"
+                            "f": "function(x, Decimal) {return Decimal(x).plus(2).toNumber();}"
                         }
                     }
                 }
             },
             "right": {
-                "data": {
-                    "node": "sf",
-                    "type": "customFunction",
-                    "params": {
-                        "f": "function(x, Decimal) {return Decimal(x).plus(2).toNumber();}"
-                    }
-                }
-            }
-        },
-        "right": {
-            "data": {
-                "node": "sf",
-                "type": "integral"
-            }
-        }
-    },
-    "right": {
-        "data": {
-            "node": "comb",
-            "type": "and"
-        },
-        "left": {
-            "data": {
-                "node": "sf",
-                "type": "identity"
-            }
-        },
-        "right": {
-            "data": {
-                "node": "comb",
-                "type": "then"
-            },
-            "left": {
-                "data": {
+                "meta": {
+                    "id": "sf4",
                     "node": "sf",
                     "type": "integral"
                 }
+            }
+        },
+        "right": {
+            "meta": {
+                "node": "comb",
+                "type": "and"
+            },
+            "left": {
+                "meta": {
+                    "id": "sf5",
+                    "node": "sf",
+                    "type": "identity"
+                }
             },
             "right": {
-                "data": {
-                    "node": "sf",
-                    "type": "customFunction",
-                    "params": {
-                        "f": "function(x, Decimal) {return Decimal(x).plus(10).toNumber();}"
+                "meta": {
+                    "node": "comb",
+                    "type": "then"
+                },
+                "left": {
+                    "meta": {
+                        "id": "sf6",
+                        "node": "sf",
+                        "type": "integral"
+                    }
+                },
+                "right": {
+                    "meta": {
+                        "id": "sf7",
+                        "node": "sf",
+                        "type": "customFunction",
+                        "params": {
+                            "f": "function(x, Decimal) {return Decimal(x).plus(10).toNumber();}"
+                        }
                     }
                 }
             }

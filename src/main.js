@@ -10,6 +10,12 @@ import {
 import {
     Flow
 } from './flows'
+import {
+    bus
+} from './bus'
+import {
+    each
+} from 'lodash'
 
 readFile(join(__dirname, './flows/fixture1.json'), (err, data) => {
 
@@ -18,7 +24,9 @@ readFile(join(__dirname, './flows/fixture1.json'), (err, data) => {
 
     tick.on('tick', t => {
         const s = flow(t)
-        console.log(s.dt + ' -> ' + s.val)
+        //console.log(s.dt + ' -> ' + s.val)
     })
+
+    bus.on('sf1', x => console.log(x))
 
 })

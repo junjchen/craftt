@@ -1,0 +1,69 @@
+{
+    "evts": {
+        "evt1": {
+            "type": "fromSignal",
+            "params": {
+                "from": "sf2",
+                "f": "function(x) {return x > 4;}"
+            }
+        }
+    },
+    "sfs": {
+        "meta": {
+            "node": "comb",
+            "type": "then"
+        },
+        "left": {
+            "meta": {
+                "node": "comb",
+                "type": "then"
+            },
+            "left": {
+                "meta": {
+                    "id": "sf1",
+                    "node": "sf",
+                    "type": "constant",
+                    "params": {
+                        "val": 12
+                    }
+                }
+            },
+            "right": {
+                "meta": {
+                    "id": "sf2",
+                    "node": "sf",
+                    "type": "integral"
+                }
+            }
+        },
+        "right": {
+            "meta": {
+                "node": "comb",
+                "type": "switch",
+                "params": {
+                    "evt": "evt1"
+                }
+            },
+            "left": {
+                "meta": {
+                    "id": "sf3",
+                    "node": "sf",
+                    "type": "customFunction",
+                    "params": {
+                        "f": "function(x, Decimal) {return Decimal(x).plus(1).toNumber();}"
+                    }
+                }
+            },
+            "right": {
+                "meta": {
+                    "id": "sf4",
+                    "node": "sf",
+                    "type": "customFunction",
+                    "params": {
+                        "f": "function(x, Decimal) {return Decimal(x).plus(2).toNumber();}"
+                    }
+                }
+            }
+        }
+    }
+}
