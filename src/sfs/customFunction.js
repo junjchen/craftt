@@ -1,7 +1,7 @@
 import stringToFunc from '../utils/stringToFunc'
 import {
     trace
-} from '../bus'
+} from './signalEvents'
 
 function CustomFunction(id, {
     f

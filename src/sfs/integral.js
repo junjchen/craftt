@@ -1,7 +1,7 @@
 import Decimal from 'decimal.js'
 import {
     trace
-} from '../bus'
+} from './signalEvents'
 
 function Integral(id) {
     let m = 0

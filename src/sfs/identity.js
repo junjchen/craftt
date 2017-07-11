@@ -1,6 +1,6 @@
 import {
     trace
-} from '../bus'
+} from './signalEvents'
 
 function Identity(id) {
     return x => trace(id, x)

@@ -2,8 +2,8 @@ import {
     EventEmitter
 } from 'events'
 import {
-    bus
-} from '../bus'
+    signalEvents
+} from '../sfs'
 import stringToFunc from '../utils/stringToFunc'
 
 function FromSignal({
@@ -12,7 +12,7 @@ function FromSignal({
 }) {
     const eventStream = new EventEmitter()
     const func = stringToFunc(f)
-    bus.on(from, e => {
+    signalEvents.on(from, e => {
         const v = func(e.val)
         if (v) {
             eventStream.emit('evt', v)

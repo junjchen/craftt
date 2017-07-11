@@ -6,6 +6,9 @@ import Then from './then'
 import All from './all'
 import And from './and'
 import Switch from './switch'
+import {
+    signalEvents
+} from './signalEvents'
 
 function getSFInstance({
     id,
@@ -64,5 +67,6 @@ function getCombInstance({
 
 export {
     getSFInstance,
-    getCombInstance
+    getCombInstance,
+    signalEvents
 }
