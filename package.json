@@ -6,8 +6,12 @@
   "author": "junjchen <chuckjunjchen@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "blueimp-md5": "^2.7.0",
+    "body-parser": "^1.17.2",
     "decimal.js": "^7.2.3",
+    "express": "^4.15.3",
     "lodash": "^4.17.4",
+    "react": "^15.6.1",
     "string-to-function": "^1.0.2"
   },
   "devDependencies": {
@@ -20,6 +24,6 @@
   },
   "scripts": {
     "test": "mocha 'src/**/*.test.js' --compilers js:babel-core/register",
-    "main": "babel-node src/main.js"
+    "server": "babel-node src/server/index.js"
   }
 }
