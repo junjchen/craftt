@@ -16,6 +16,10 @@
 - **Patterns in Reactive Programming: from Transformative to Reactive**
 - **TimeFlies: Push-Pull Signal-Function Functional Reactive Programming**
 - **Linear Temporal Logic**: Could be used to describe/verify the implementation
+- **A Visual Programming Framework for Wireless Sensor Networks in Smart Home Applications**
+- **Usability Analysis of Visual Programming Environments:a 'cognitive dimensions' framework**
+- **glue. things: a Mashup Platform for wiring the Internet of Things with the Internet of Services**
+- **A novel architecture enabling the visual implementation of Web of Things applications**
 
 ## Study on NODE-RED
 
